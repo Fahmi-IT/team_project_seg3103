@@ -42,3 +42,5 @@ echo Running Cucumber tests with manual paths...
     build/test/resources/features
 
 echo Build complete!
+
+start build\test-results\cucumber-report.html

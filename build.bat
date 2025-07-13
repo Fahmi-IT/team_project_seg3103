@@ -42,3 +42,5 @@ java ^
     build/test/resources/features
 
 echo Build complete!
+
+start build\test-results\cucumber-report.html
