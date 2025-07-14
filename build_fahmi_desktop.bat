@@ -34,8 +34,8 @@ echo Running Cucumber tests with manual paths...
 "C:\Program Files\Eclipse Adoptium\jdk-21.0.2.13-hotspot\bin\java" ^
     -cp "lib/cucumber_lib/*;build/classes;build/test/resources" ^
     io.cucumber.core.cli.Main ^
-    --glue src.test.java.steps ^
-    --glue src.test.java.runners.CucumberTestRunner ^
+    --glue steps ^
+    --glue runners.CucumberTestRunner ^
     --plugin pretty ^
     --plugin html:build/test-results/cucumber-report.html ^
     --plugin json:build/test-results/cucumber-report.json ^

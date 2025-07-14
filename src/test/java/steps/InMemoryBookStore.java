@@ -1,13 +1,13 @@
-package src.test.java.steps;
+package steps;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import src.main.java.main.Book;
-import src.main.java.main.BookStore;
-import src.main.java.main.MemberRegistry;
+import main.Book;
+import main.BookStore;
+import main.MemberRegistry;
 
 /**
  * In-memory implementation of BookStore for testing

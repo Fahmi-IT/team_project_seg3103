@@ -1,11 +1,11 @@
-package src.test.java.steps;
+package steps;
 
 import io.cucumber.java.en.*;
-import src.main.java.main.Book;
-import src.main.java.main.BookStore;
-import src.main.java.main.Library;
-import src.main.java.main.LibraryResult;
-import src.main.java.main.MemberRegistry;
+import main.Book;
+import main.BookStore;
+import main.Library;
+import main.LibraryResult;
+import main.MemberRegistry;
 import io.cucumber.datatable.DataTable;
 
 import org.junit.jupiter.api.Assertions;
