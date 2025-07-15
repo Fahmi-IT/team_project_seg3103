@@ -19,7 +19,7 @@ public class Book {
         this.author = author;
         this.isbn = isbn;
         this.isBorrowed = false;
-        this.borrower = null;
+        this.borrower = "";
     }
 
     // Getters
@@ -40,7 +40,7 @@ public class Book {
 
     public void returnBook() {
         isBorrowed = false;
-        borrower = null;
+        borrower = "";
     }
 
     @Override
