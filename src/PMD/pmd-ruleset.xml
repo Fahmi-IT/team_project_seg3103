@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleset name="jpinpoint-java-rules"
+         xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 http://pmd.sourceforge.net/ruleset_2_0_0.xsd">
+
+<description>
+        Flags poor equals() implementations and common Java mistakes.
+    </description>
+
+    <!-- Error-prone logic -->
+    <rule ref="category/java/errorprone.xml/EqualsNull" />
+    <rule ref="category/java/errorprone.xml/UseEqualsToCompareStrings" />
+    <rule ref="category/java/errorprone.xml/EmptyCatchBlock" />
+
+    <!-- Code design -->
+    <rule ref="category/java/design.xml/SimplifyBooleanReturns" />
+    <rule ref="category/java/design.xml/CyclomaticComplexity" />
+
+
+    <!-- Code style -->
+    <rule ref="category/java/codestyle.xml/ConfusingTernary" />
+
+</ruleset>

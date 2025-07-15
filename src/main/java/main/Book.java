@@ -44,13 +44,24 @@ public class Book {
     }
 
     @Override
-    public boolean equals(Object obj) {
-        if (this == obj) return true;
-        if (obj == null || getClass() != obj.getClass()) return false;
-        Book book = (Book) obj;
-        return title.equals(book.title)
-                && author.equals(book.author)
-                && isbn.equals(book.isbn);
+    public boolean equals(Object o) {
+        try {
+            Book b = (Book)o;
+            if (o == null) {
+                return false;
+            } else if (this == o) {
+                return true;
+            } else if (getClass() != o.getClass()) {
+                return false;
+            } else if (b.title == title || b.author == author) {
+                if (b.isbn.equals(isbn)) {
+                    return true;
+                }
+            }
+        } catch (Exception e) {
+            // ignore
+        }
+        return false;
     }
 
     @Override
