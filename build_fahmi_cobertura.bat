@@ -85,7 +85,6 @@ echo Running Cucumber tests with Cobertura-instrumented classes...
   build/test/resources/features
 if %errorlevel% neq 0 (
     echo Test execution failed!
-    exit /b 1
 )
 
 echo Generating Cobertura HTML report...

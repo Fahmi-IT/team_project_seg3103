@@ -112,6 +112,7 @@ Feature: Library Management System
       | Valid Book     |                  | 978-1-234-56789-2 | failure | All fields (title, author, ISBN) are required |
       | Valid Book     | Valid Author     |                   | failure | All fields (title, author, ISBN) are required |
 
+  # The test below is designed to fail.
   Scenario: View available books
     Given the following books are available:
       | title           | author              | isbn              |
@@ -120,7 +121,7 @@ Feature: Library Management System
     And "John Doe" has borrowed the book with ISBN "978-0-547-92822-7"
     When I request the list of available books
     Then I should see 1 available book
-    And the available book should be "Pride and Prejudice" by "Jane Austen"
+    And the available book should be "Pride and Prejudice" by "Jack Austen"
 
   Scenario: View books borrowed by a member
     Given the following books are available:
